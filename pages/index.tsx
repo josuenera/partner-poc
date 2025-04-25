@@ -1,6 +1,7 @@
 import { OrderBaseMapper } from '../mappers/OrderBaseMapper';
 import { PartnerFactory } from '../factories/PartnerFactory';
 import { ProductFactory } from '../factories/ProductFactory';
+import Link from 'next/link';
 
 export default function Home() {
   const rawData = {
@@ -32,6 +33,7 @@ export default function Home() {
       <h1>Partner PoC</h1>
       <p>Orden procesada: {order.id}</p>
       <p>Disclaimer: {disclaimerText}</p>
+      <Link href="/dashboard"> Dashboard </Link>
     </div>
   );
 }

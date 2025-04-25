@@ -3,3 +3,8 @@ export interface Order {
   amount: number;
   partnerId: string;
 }
+
+export interface OrderSimulation {
+  amount: number;
+  installments: Array<string, any>
+}
